@@ -1,0 +1,41 @@
+@import url(reset.css);
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+html {
+
+    /* para generar animacion en el punto de ancla */
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+:root {
+    --fuenteprincipal: font-family: 'Montserrat', sans-serif;
+    --fuentetitulos: font-family: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorazul: #21242e;
+    --margingrid: 1em;
+    --font-size: 1em;
+    --anchomaximo: 68.75em;
+}
+
+body {
+    font-family: var(--fuenteprincipal);
+    font-size: var(--font-size);
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}

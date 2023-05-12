@@ -58,13 +58,19 @@ header .nav-top .container a {
 }
 
 header .nav-top .container a i {
-    font-size: 140%;
+    font-size: 120%;
 }
 
 header .nav-top .container span {
     color: white;
     display: none;
 }
-}
 
 /* final de header */
+/* inicio mediaqueries */
+@media(min-width:48em) {
+    header .nav-top .container a span {
+        display: inline;
+
+    }
+}

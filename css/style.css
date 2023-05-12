@@ -39,3 +39,32 @@ body {
     max-width: var(--anchomaximo);
     margin: 0 auto;
 }
+
+/* inicio header */
+header .nav-top {
+    background-color: var(--colorazul);
+    padding: 1.25em 0px;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top .container a {
+    text-decoration: none;
+    color: var(--colorprincipal);
+
+}
+
+header .nav-top .container a i {
+    font-size: 140%;
+}
+
+header .nav-top .container span {
+    color: white;
+    display: none;
+}
+}
+
+/* final de header */

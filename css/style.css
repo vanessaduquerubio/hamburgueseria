@@ -21,8 +21,8 @@ img {
 }
 
 :root {
-    --fuenteprincipal: font-family: 'Montserrat', sans-serif;
-    --fuentetitulos: font-family: 'Handlee', cursive;
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Handlee', cursive;
     --colorprincipal: #fa573a;
     --colorazul: #21242e;
     --margingrid: 1em;
@@ -111,7 +111,71 @@ header nav .menu li:last-child a {
 }
 
 /* final de header */
+
+/* inicio de blog */
+section .articles {
+    display: flex;
+}
+
+section article {
+    padding: 10px;
+}
+
+section h3 {
+    font-family: var(--fuentetitulos);
+    display: block;
+    color: black;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 200%;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+section span {
+    color: var(--colorprincipal);
+    margin: 0 auto;
+}
+
+section .articles img {
+    height: 50%;
+}
+
+section .articles h4 {
+    padding: 10px 0 10px 0;
+    text-transform: capitalize;
+    font-weight: 600;
+    /* font-family: var(--fuenteprincipal); */
+    font-size: 1.5em;
+}
+
+section .articles h5 {
+    color: var(--colorprincipal);
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+section .articles p {
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+section .articles a {
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: 600;
+
+}
+
+
+
+/* final de blog */
+
 /* inicio mediaqueries */
+/* mediaqueries de header */
 @media(min-width:48em) {
     header .nav-top .container a span {
         display: inline;
@@ -142,3 +206,6 @@ header nav .menu li:last-child a {
         border-bottom: 0px;
     }
 }
+
+/* fin mediaqueries de header */
+/* principio mediaqueries de blog  */

@@ -221,6 +221,15 @@ section .articles a {
         padding: 0.5em 0 1.5em 1.25em;
         border-bottom: 0px;
     }
+
+    section .articles {
+        flex-wrap: wrap;
+    }
+
+    section article {
+        height: calc(50%-15px);
+
+    }
 }
 
 /* fin mediaqueries de header */

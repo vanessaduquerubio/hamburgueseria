@@ -118,23 +118,39 @@ section .articles {
 }
 
 section article {
-    padding: 10px;
+    padding: 15px;
 }
 
-section h3 {
+section .titulo h3 {
     font-family: var(--fuentetitulos);
-    display: block;
-    color: black;
-    padding: 20px;
+    padding: 40px;
     margin: 0 auto;
     font-size: 200%;
     font-weight: bolder;
     text-transform: capitalize;
+    margin-left: 42vh;
 }
 
 section span {
     color: var(--colorprincipal);
     margin: 0 auto;
+}
+
+section .articles article {
+    position: relative;
+}
+
+section .articles div {
+    position: absolute;
+    background-color: var(--colorprincipal);
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
 }
 
 section .articles img {
@@ -145,7 +161,6 @@ section .articles h4 {
     padding: 10px 0 10px 0;
     text-transform: capitalize;
     font-weight: 600;
-    /* font-family: var(--fuenteprincipal); */
     font-size: 1.5em;
 }
 
@@ -159,7 +174,7 @@ section .articles h5 {
 section .articles p {
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
-    line-height: 20px;
+    line-height: 25px;
     margin-bottom: 10px;
 }
 
@@ -167,6 +182,7 @@ section .articles a {
     text-decoration: none;
     color: var(--colorprincipal);
     font-weight: 600;
+    text-transform: capitalize;
 
 }
 

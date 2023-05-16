@@ -294,8 +294,14 @@ main section .enlace i {
     margin-left: 2px;
 }
 
-
 /* fin servicios */
+
+/* inicio aboutus */
+main #aboutus .grid figure {
+    width: 100%;
+}
+
+/* fin aboutus */
 
 /* inicio mediaqueries */
 @media(min-width:48em) {
@@ -327,6 +333,13 @@ main section .enlace i {
     }
 
     /* fin servicios */
+    /* inicio aboutus */
+    main #aboutus .grid figure,
+    main #aboutus .grid>div {
+        width: 50%;
+    }
+
+    /* fin about us */
 
 }
 

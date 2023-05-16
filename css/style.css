@@ -207,6 +207,95 @@ footer a:hover {
 }
 
 /* fin hero */
+/* inicio servicios */
+main section {
+    padding: 2.125em var(--margingrid);
+}
+
+main h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+
+}
+
+main section h2 span {
+    color: var(--colorprincipal);
+}
+
+main section .underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -2px;
+    border-color: var(--colorprincipal);
+}
+
+main section .underline span {
+    text-align: center;
+    display: block;
+    color: var(--colorprincipal);
+    font-weight: 700px;
+}
+
+main section .grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main #servicios article {
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em 0;
+
+}
+
+main section:last-child {
+    margin-bottom: 3em;
+}
+
+main #servicios article>div i {
+    display: inline-block;
+    color: var(--colorprincipal);
+    font-size: 140%;
+    border: 1px solid var(--colorprincipal);
+    padding: 0.5em;
+}
+
+main #servicios article h3 {
+    margin: var(--margingrid) 0;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main section p {
+    color: #666;
+    line-height: 1.15em;
+    margin-bottom: var(--margingrid);
+}
+
+.fa-truck {
+    transform: rotateY(180deg);
+    /* esti es para rotarlo sobre Y 180º */
+}
+
+main section .enlace {
+    color: var(--colorprincipal);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+main section .enlace i {
+    margin-left: 2px;
+}
+
+
+/* fin servicios */
 
 /* inicio mediaqueries */
 @media(min-width:48em) {
@@ -224,6 +313,20 @@ footer a:hover {
     }
 
     /* footer */
+    /* inicio servicios */
+    main #servicios article {
+        width: 50%;
+        border-bottom: 0;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+        margin-top: var(--margingrid);
+    }
+
+    main #servicios article:last-child {
+        width: 100%;
+    }
+
+    /* fin servicios */
 
 }
 
@@ -251,7 +354,16 @@ footer a:hover {
         padding: 0;
     }
 
-    /* footer */
+    /* inicio servicios */
+    main #servicios article {
+        width: 33.333%;
 
-    /* fin footer */
+    }
+
+    main #servicios article:last-child {
+        width: 33.333%;
+    }
+
+    /* fin servicios */
+
 }

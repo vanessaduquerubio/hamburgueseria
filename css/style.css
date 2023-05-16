@@ -21,8 +21,8 @@ img {
 }
 
 :root {
-    --fuenteprincipal: font-family: 'Montserrat', sans-serif;
-    --fuentetitulos: font-family: 'Handlee', cursive;
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Handlee', cursive;
     --colorprincipal: #fa573a;
     --colorazul: #21242e;
     --margingrid: 1em;
@@ -143,6 +143,66 @@ footer a:hover {
     right: 1.25rem;
 
 }
+
+/* inicio hero */
+.hero {
+    background-image: url(../images/fondo.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #888;
+    padding-top: 17vh;
+    color: white;
+}
+
+.hero h1 {
+    font-family: var(--fuentetitulos);
+    font-size: 2.25em;
+}
+
+.hero h2 {
+    color: var(--colorprincipal);
+    font-size: 1.25em;
+    margin: var(--margingrid) 0;
+}
+
+.hero p {
+    font-size: 1.15em;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--colorprincipal);
+    padding: 1.15em;
+    color: white;
+    text-decoration: none;
+    border: 1px solid var(--colorprincipal);
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: var(--colorprincipal);
+
+
+}
+
+.hero .container>div {
+    margin: var(--margingrid) 0;
+}
+
+.hero .social {
+    display: flex;
+    justify-content: space-between;
+    width: 10.5em;
+}
+
+.hero .social a {
+    color: white;
+    font-size: 2em;
+}
+
+/* fin hero */
 
 /* inicio mediaqueries */
 @media(min-width:48em) {

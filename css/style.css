@@ -313,6 +313,20 @@ main section .enlace i {
     }
 
     /* footer */
+    /* inicio servicios */
+    main #servicios article {
+        width: 50%;
+        border-bottom: 0;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+        margin-top: var(--margingrid);
+    }
+
+    main #servicios article:last-child {
+        width: 100%;
+    }
+
+    /* fin servicios */
 
 }
 
@@ -340,7 +354,16 @@ main section .enlace i {
         padding: 0;
     }
 
-    /* footer */
+    /* inicio servicios */
+    main #servicios article {
+        width: 33.333%;
 
-    /* fin footer */
+    }
+
+    main #servicios article:last-child {
+        width: 33.333%;
+    }
+
+    /* fin servicios */
+
 }

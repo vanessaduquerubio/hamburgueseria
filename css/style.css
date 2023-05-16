@@ -247,6 +247,10 @@ footer a:hover {
         border-bottom: 0px;
     }
 
+    .hero .container {
+        padding: 0;
+    }
+
     /* footer */
 
     /* fin footer */

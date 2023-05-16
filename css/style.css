@@ -294,8 +294,47 @@ main section .enlace i {
     margin-left: 2px;
 }
 
-
 /* fin servicios */
+
+/* inicio aboutus */
+main #aboutus .grid figure {
+    width: 100%;
+}
+
+main #aboutus .grid h3 {
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main #aboutus .grid h4 {
+    margin: var(--margingrid) 0;
+    color: var(--colorprincipal);
+}
+
+main #aboutus .imagen {
+
+    margin: 1.5em auto;
+    width: 93%;
+}
+
+main #aboutus .imagen img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+
+}
+
+main #aboutus .imagen .marco {
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen:hover :is(.marco, .marco img) {
+    transform: rotateZ(0deg);
+}
+
+
+/* fin aboutus */
 
 /* inicio mediaqueries */
 @media(min-width:48em) {
@@ -327,6 +366,23 @@ main section .enlace i {
     }
 
     /* fin servicios */
+    /* inicio aboutus */
+    main #aboutus .grid figure,
+    main #aboutus .grid>div {
+        width: 50%;
+    }
+
+    main #aboutus .grid h3 {
+        margin-top: var(--margingrid);
+    }
+
+    main #aboutus .imagen {
+
+        margin: var(--margingrid) 0;
+    }
+
+
+    /* fin about us */
 
 }
 

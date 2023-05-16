@@ -207,6 +207,49 @@ footer a:hover {
 }
 
 /* fin hero */
+/* inicio servicios */
+main section {
+    padding: 2.125em var(--margingrid);
+}
+
+main h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+
+}
+
+main section h2 span {
+    color: var(--colorprincipal);
+}
+
+main section .underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -2px;
+    border-color: var(--colorprincipal);
+}
+
+main section .underline span {
+    text-align: center;
+    display: block;
+    color: var(--colorprincipal);
+    font-weight: 700px;
+}
+
+main section .grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* fin servicios */
 
 /* inicio mediaqueries */
 @media(min-width:48em) {

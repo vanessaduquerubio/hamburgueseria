@@ -173,7 +173,6 @@ section .articles h5 {
 
 section .articles p {
     font-weight: 500;
-    font-family: 'Times New Roman', Times, serif;
     line-height: 25px;
     margin-bottom: 10px;
 }
@@ -222,14 +221,9 @@ section .articles a {
         border-bottom: 0px;
     }
 
-    section .articles {
-        flex-wrap: wrap;
-    }
+    section .articles {}
 
-    section article {
-        height: calc(50%-15px);
-
-    }
+    section article {}
 }
 
 /* fin mediaqueries de header */

@@ -335,6 +335,41 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
 
 /* fin aboutus */
+/* inicio menu */
+main #carta {
+    background-color: var(--colorazul);
+    height: 100%;
+}
+
+main #carta h2 {
+    color: white;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+#carta .menu li a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 1.2em;
+
+}
+
+#carta .menu li {
+    width: 100%;
+    padding: 20px;
+    transition: 1s;
+}
+
+#carta .menu li:hover {
+    background-color: var(--colorprincipal);
+    padding: 20px;
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+/* fin menu */
 
 /* inicio mediaqueries */
 @media(min-width:48em) {

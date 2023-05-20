@@ -441,10 +441,6 @@ section .articles div {
     font-weight: 700;
 }
 
-section .articles img {
-    height: 50%;
-}
-
 section .articles h4 {
     padding: 1.25em 0 1.25em 0;
     text-transform: capitalize;

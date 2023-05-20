@@ -335,7 +335,7 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
 
 /* fin aboutus */
-/* inicio menu */
+/* inicio carta */
 .fondoazul {
     background-color: var(--colorazul);
     height: 100vh;
@@ -375,12 +375,12 @@ main #carta h2 {
 #carta h3 {
     color: white;
     font-weight: 700;
-    margin-top: 50px;
+    margin-top: 3.125em;
 }
 
 #carta .titulo2 {
     display: inline-block;
-    width: 50px;
+    width: 3.125em;
     border-color: var(--colorprincipal);
 
 }
@@ -410,10 +410,70 @@ main section figure {
 
 }
 
+/* fin carta */
+
+/* inicio blog */
+section .articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section article {
+    padding: 0.9375em;
+}
 
 
-/* fin menu */
+section .articles article {
+    position: relative;
+    width: 50%;
+}
 
+section .articles div {
+    position: absolute;
+    background-color: var(--colorprincipal);
+    width: 3.125em;
+    height: 3.125em;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.625em;
+    font-weight: 700;
+}
+
+section .articles h4 {
+    padding: 1.25em 0 1.25em 0;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+section .articles h5 {
+    color: var(--colorprincipal);
+    font-weight: 600;
+    padding-bottom: 0.625em;
+    text-transform: capitalize;
+}
+
+section .articles p {
+    font-weight: 500;
+    line-height: 1.5625em;
+    margin-bottom: 0.625em;
+}
+
+section .articles a {
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+
+
+
+/* final de blog */
+
+
+/* fin blog */
 /* inicio mediaqueries */
 @media(min-width:48em) {
     header .nav-top .container a span {
@@ -546,9 +606,14 @@ main section figure {
         margin-left: var(--margingrid);
     }
 
-
-
-
     /* fin carta */
+    /* inicioblog */
+
+    section .articles article {
+
+        width: 33.333%;
+    }
+
+    /* fin blog */
 
 }

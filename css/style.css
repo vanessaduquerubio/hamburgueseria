@@ -67,7 +67,7 @@ header .nav-top .container span {
 }
 
 header nav {
-    padding: 1.25em;
+    padding-top: 1.25em;
 }
 
 header nav .container {
@@ -335,12 +335,91 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
 
 /* fin aboutus */
+/* inicio menu */
+.fondoazul {
+    background-color: var(--colorazul);
+    height: 100vh;
+    padding-top: 1.5em;
+}
+
+main #carta h2 {
+    color: white;
+    font-family: var(--fuentetitulos);
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+#carta .menu li a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 1.2em;
+
+}
+
+#carta .menu li {
+    width: 100%;
+    padding: 1.25em;
+    transition: 1s;
+
+}
+
+#carta .menu li:hover {
+    background-color: var(--colorprincipal);
+    padding: 1.25em;
+    width: 100%;
+    border-radius: 0.9375em;
+
+}
+
+#carta h3 {
+    color: white;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+#carta .titulo2 {
+    display: inline-block;
+    width: 50px;
+    border-color: var(--colorprincipal);
+
+}
+
+#carta p {
+    color: white;
+}
+
+
+main section figure {
+    margin-top: var(--margingrid);
+}
+
+#cartamenu h3 {
+    color: white;
+    font-weight: 700;
+    margin-top: 1.25em;
+}
+
+#cartamenu span {
+    color: var(--colorprincipal);
+}
+
+#cartamenu p {
+    color: white;
+    margin-top: 0.9375em;
+
+}
+
+
+
+/* fin menu */
 
 /* inicio mediaqueries */
 @media(min-width:48em) {
     header .nav-top .container a span {
         display: inline;
     }
+
 
     header nav .container {
         justify-content: space-between;
@@ -380,11 +459,15 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
         margin: var(--margingrid) 0;
     }
-
-
-    /* fin about us */
-
 }
+
+
+/* fin about us */
+/* inicio menu */
+
+
+
+/* fin menu */
 
 @media(min-width: 62.75em) {
     header nav .hamburguesa {
@@ -421,5 +504,51 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     }
 
     /* fin servicios */
+    /* inicio carta */
+
+
+    #cartaoferta {
+
+        flex-direction: column;
+        width: 30%;
+        position: absolute;
+    }
+
+    main section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #cartaoferta {
+        width: 27rem;
+        position: absolute;
+    }
+
+    #cartamenu {
+        position: relative;
+        margin-left: 27rem;
+    }
+
+    main section figure {
+        width: 100%;
+        display: flex;
+
+    }
+
+    #cartamenu figure img {
+        width: 30%;
+        margin: 5px;
+
+    }
+
+    #cartamenu figure>div {
+        margin-left: var(--margingrid);
+    }
+
+
+
+
+    /* fin carta */
 
 }

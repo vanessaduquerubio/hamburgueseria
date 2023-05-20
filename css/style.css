@@ -67,7 +67,7 @@ header .nav-top .container span {
 }
 
 header nav {
-    padding: 1.25em;
+    padding-top: 1.25em;
 }
 
 header nav .container {
@@ -388,9 +388,8 @@ main #carta h2 {
     color: white;
 }
 
+
 main section figure {
-    display: flex;
-    flex-direction: column;
     margin-top: var(--margingrid);
 }
 
@@ -407,6 +406,7 @@ main section figure {
 #cartamenu p {
     color: white;
     margin-top: 0.9375em;
+    dis
 }
 
 
@@ -460,6 +460,11 @@ main section figure {
 
 
     /* fin about us */
+    /* inicio menu */
+
+
+
+    /* fin menu */
 
 }
 
@@ -498,5 +503,43 @@ main section figure {
     }
 
     /* fin servicios */
+    /* inicio carta */
+    #cartaoferta {
+
+        flex-direction: column;
+        width: 30%;
+        position: absolute;
+    }
+
+    main section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #cartaoferta {
+        width: 27rem;
+        position: absolute;
+    }
+
+    #cartamenu {
+        position: relative;
+        margin-left: 27rem;
+    }
+
+    main section figure {
+        width: 100%;
+        display: flex;
+    }
+
+    main section figure img {
+        width: 30%;
+
+    }
+
+
+
+
+    /* fin carta */
 
 }

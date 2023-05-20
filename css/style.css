@@ -336,17 +336,18 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
 /* fin aboutus */
 /* inicio menu */
-main #carta {
+.fondoazul {
     background-color: var(--colorazul);
-    height: 100%;
-
+    height: 100vh;
+    padding-top: 1.5em;
 }
 
 main #carta h2 {
     color: white;
     font-family: var(--fuentetitulos);
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
+    margin-top: 1em;
 }
 
 #carta .menu li a {
@@ -406,7 +407,7 @@ main section figure {
 #cartamenu p {
     color: white;
     margin-top: 0.9375em;
-    dis
+
 }
 
 
@@ -418,6 +419,7 @@ main section figure {
     header .nav-top .container a span {
         display: inline;
     }
+
 
     header nav .container {
         justify-content: space-between;
@@ -457,16 +459,15 @@ main section figure {
 
         margin: var(--margingrid) 0;
     }
-
-
-    /* fin about us */
-    /* inicio menu */
-
-
-
-    /* fin menu */
-
 }
+
+
+/* fin about us */
+/* inicio menu */
+
+
+
+/* fin menu */
 
 @media(min-width: 62.75em) {
     header nav .hamburguesa {
@@ -504,6 +505,8 @@ main section figure {
 
     /* fin servicios */
     /* inicio carta */
+
+
     #cartaoferta {
 
         flex-direction: column;
@@ -530,11 +533,17 @@ main section figure {
     main section figure {
         width: 100%;
         display: flex;
+
     }
 
-    main section figure img {
+    #cartamenu figure img {
         width: 30%;
+        margin: 5px;
 
+    }
+
+    #cartamenu figure>div {
+        margin-left: var(--margingrid);
     }
 
 

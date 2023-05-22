@@ -1,0 +1,627 @@
+@import url(reset.css);
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+html {
+
+    /* para generar animacion en el punto de ancla */
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+:root {
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Handlee', cursive;
+    --colorprincipal: rgb(250, 87, 58);
+    --colorazul: #21242e;
+    --margingrid: 1em;
+    --font-size: 1em;
+    --anchomaximo: 68.75em;
+}
+
+body {
+    font-family: var(--fuenteprincipal);
+    font-size: var(--font-size);
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
+
+/* inicio header */
+
+
+header .nav-top {
+    background-color: var(--colorazul);
+    padding: 1.25em 0px;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top .container a {
+    text-decoration: none;
+    color: var(--colorprincipal);
+
+}
+
+header .nav-top .container a i {
+    font-size: 120%;
+}
+
+header .nav-top .container span {
+    color: white;
+    display: none;
+
+}
+
+header nav {
+    padding-top: 1.25em;
+}
+
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav .menu {
+    width: 100%;
+}
+
+header nav .hamburguesa {
+    cursor: pointer;
+    width: 1.875em;
+}
+
+header nav .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin-bottom: 0.625em;
+}
+
+header nav figure {
+    max-width: 100px;
+}
+
+header nav .menu li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    font-family: var(--fuenteprincipal);
+    font-size: 120%;
+    text-align: center;
+    padding: 1.25em;
+    color: #aaa;
+    border-bottom: 2px solid #aaa;
+}
+
+header nav .menu li:last-child a {
+    border-bottom: none;
+}
+
+header nav .menu li .activa {
+    color: var(--colorprincipal);
+}
+
+/* final de header */
+
+/* inicio footer */
+footer {
+    background-color: var(--colorazul);
+    padding: 1.25em 0;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 110%;
+}
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+/* fin de footer */
+.flecha a {
+    display: block;
+    color: var(--colorprincipal);
+    font-size: 300%;
+    position: fixed;
+    bottom: 4.375rem;
+    right: 1.25rem;
+
+}
+
+/* inicio hero */
+.hero {
+    background-image: url(../images/fondo.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #888;
+    padding-top: 17vh;
+    color: white;
+}
+
+.hero h1 {
+    font-family: var(--fuentetitulos);
+    font-size: 2.25em;
+}
+
+.hero h2 {
+    color: var(--colorprincipal);
+    font-size: 1.25em;
+    margin: var(--margingrid) 0;
+}
+
+.hero p {
+    font-size: 1.15em;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--colorprincipal);
+    padding: 1.15em;
+    color: white;
+    text-decoration: none;
+    border: 1px solid var(--colorprincipal);
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: var(--colorprincipal);
+
+
+}
+
+.hero .container>div {
+    margin: var(--margingrid) 0;
+}
+
+.hero .social {
+    display: flex;
+    justify-content: space-between;
+    width: 10.5em;
+}
+
+.hero .social a {
+    color: white;
+    font-size: 2em;
+}
+
+.hero .container {
+    padding: 0 var(--margingrid);
+}
+
+/* fin hero */
+/* inicio servicios */
+main section {
+    padding: 2.125em var(--margingrid);
+}
+
+main h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+
+}
+
+main section h2 span {
+    color: var(--colorprincipal);
+}
+
+main section .underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -2px;
+    border-color: var(--colorprincipal);
+}
+
+main section .underline span {
+    text-align: center;
+    display: block;
+    color: var(--colorprincipal);
+    font-weight: 700px;
+}
+
+main section .grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main #servicios article {
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em 0;
+
+}
+
+main section:last-child {
+    margin-bottom: 3em;
+}
+
+main #servicios article>div i {
+    display: inline-block;
+    color: var(--colorprincipal);
+    font-size: 140%;
+    border: 1px solid var(--colorprincipal);
+    padding: 0.5em;
+}
+
+main #servicios article h3 {
+    margin: var(--margingrid) 0;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main section p {
+    color: #666;
+    line-height: 1.15em;
+    margin-bottom: var(--margingrid);
+}
+
+.fa-truck {
+    transform: rotateY(180deg);
+    /* esti es para rotarlo sobre Y 180º */
+}
+
+main section .enlace {
+    color: var(--colorprincipal);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+main section .enlace i {
+    margin-left: 2px;
+}
+
+/* fin servicios */
+
+/* inicio aboutus */
+main #aboutus .grid figure {
+    width: 100%;
+}
+
+main #aboutus .grid h3 {
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main #aboutus .grid h4 {
+    margin: var(--margingrid) 0;
+    color: var(--colorprincipal);
+}
+
+main #aboutus .imagen {
+
+    margin: 1.5em auto;
+    width: 93%;
+}
+
+main #aboutus .imagen img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+
+}
+
+main #aboutus .imagen .marco {
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen:hover :is(.marco, .marco img) {
+    transform: rotateZ(0deg);
+}
+
+
+/* fin aboutus */
+/* inicio carta */
+.fondoazul {
+    background-color: var(--colorazul);
+    height: 100%;
+    padding-top: 1.5em;
+}
+
+main #carta h2 {
+    color: white;
+    font-family: var(--fuentetitulos);
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+#carta .menu li a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 1.2em;
+
+}
+
+#carta .menu li {
+    width: 100%;
+    padding: 1.25em;
+    transition: 1s;
+
+}
+
+#carta .menu li:hover {
+    background-color: var(--colorprincipal);
+    padding: 1.25em;
+    width: 100%;
+    border-radius: 0.9375em;
+
+}
+
+#carta h3 {
+    color: white;
+    font-weight: 700;
+    margin-top: 3.125em;
+}
+
+#carta .titulo2 {
+    display: inline-block;
+    width: 3.125em;
+    border-color: var(--colorprincipal);
+
+}
+
+#carta p {
+    color: white;
+}
+
+
+main section figure {
+    margin-top: var(--margingrid);
+}
+
+#cartamenu h3 {
+    color: white;
+    font-weight: 700;
+    margin-top: 1.25em;
+}
+
+#cartamenu span {
+    color: var(--colorprincipal);
+}
+
+#cartamenu p {
+    color: white;
+    margin-top: 0.9375em;
+
+}
+
+/* fin carta */
+
+/* inicio blog */
+section .articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section article {
+    padding: 0.9375em;
+}
+
+
+section .articles article {
+    position: relative;
+    width: 50%;
+}
+
+section .articles div {
+    position: absolute;
+    background-color: rgb(250, 87, 58, 0.8);
+    width: 3.125em;
+    height: 3.125em;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.625em;
+    font-weight: 700;
+}
+
+section .articles h4 {
+    padding: 1.25em 0 1.25em 0;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+section .articles h5 {
+    color: var(--colorprincipal);
+    font-weight: 600;
+    padding-bottom: 0.625em;
+    text-transform: capitalize;
+}
+
+section .articles p {
+    font-weight: 500;
+    line-height: 1.5625em;
+    margin-bottom: 0.625em;
+}
+
+section .articles a {
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+
+
+
+/* final de blog */
+
+
+/* fin blog */
+/* inicio mediaqueries */
+@media(min-width:48em) {
+    header .nav-top .container a span {
+        display: inline;
+    }
+
+
+    header nav .container {
+        justify-content: space-between;
+    }
+
+    /* footer  */
+    footer {
+        text-align: left;
+    }
+
+    /* footer */
+    /* inicio servicios */
+    main #servicios article {
+        width: 50%;
+        border-bottom: 0;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+        margin-top: var(--margingrid);
+    }
+
+    main #servicios article:last-child {
+        width: 100%;
+    }
+
+    /* fin servicios */
+    /* inicio aboutus */
+    main #aboutus .grid figure,
+    main #aboutus .grid>div {
+        width: 50%;
+    }
+
+    main #aboutus .grid h3 {
+        margin-top: var(--margingrid);
+    }
+
+    main #aboutus .imagen {
+
+        margin: var(--margingrid) 0;
+    }
+}
+
+
+/* fin about us */
+/* inicio menu */
+
+
+
+/* fin menu */
+
+@media(min-width: 62.75em) {
+    header nav .hamburguesa {
+        display: none;
+    }
+
+    header nav .menu {
+        width: auto;
+    }
+
+    header nav .menu li {
+        display: inline-block;
+
+
+    }
+
+    header nav .menu li a {
+        padding: 0.5em 0 1.5em 1.25em;
+        border-bottom: 0px;
+    }
+
+    .hero .container {
+        padding: 0;
+    }
+
+    /* inicio servicios */
+    main #servicios article {
+        width: 33.333%;
+
+    }
+
+    main #servicios article:last-child {
+        width: 33.333%;
+    }
+
+    /* fin servicios */
+    /* inicio carta */
+
+
+    #cartaoferta {
+
+        flex-direction: column;
+        width: 30%;
+        position: absolute;
+    }
+
+    main section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #cartaoferta {
+        width: 27rem;
+        position: absolute;
+    }
+
+    #cartamenu {
+        position: relative;
+        margin-left: 27rem;
+    }
+
+    main section figure {
+        width: 100%;
+        display: flex;
+
+    }
+
+    #cartamenu figure img {
+        width: 30%;
+        margin: 5px;
+
+    }
+
+    #cartamenu figure>div {
+        margin-left: var(--margingrid);
+    }
+
+    /* fin carta */
+    /* inicioblog */
+
+    section .articles article {
+
+        width: 33.333%;
+    }
+
+    /* fin blog */
+
+}

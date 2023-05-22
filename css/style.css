@@ -41,6 +41,8 @@ body {
 }
 
 /* inicio header */
+
+
 header .nav-top {
     background-color: var(--colorazul);
     padding: 1.25em 0px;
@@ -64,6 +66,7 @@ header .nav-top .container a i {
 header .nav-top .container span {
     color: white;
     display: none;
+
 }
 
 header nav {
@@ -110,6 +113,10 @@ header nav .menu li:last-child a {
     border-bottom: none;
 }
 
+header nav .menu li .activa {
+    color: var(--colorprincipal);
+}
+
 /* final de header */
 
 /* inicio footer */
@@ -123,6 +130,7 @@ footer {
     bottom: 0;
     font-size: 110%;
 }
+
 
 footer a {
     color: white;
@@ -338,7 +346,7 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 /* inicio carta */
 .fondoazul {
     background-color: var(--colorazul);
-    height: 100vh;
+    height: 100%;
     padding-top: 1.5em;
 }
 
